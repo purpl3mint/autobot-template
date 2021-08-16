@@ -1,0 +1,106 @@
+extends common/layout
+
+block content 
+  main.main 
+    .wrapper
+      h1.main__title Возможности
+      .cards 
+        .card.card-1
+          h2.card__title Все объявления на одной площадке
+          p.card__description 
+            | Объявления о продаже автомобилей со всех досок объявлений Беларуси на одной площадке.
+            |#[br]Зачем смотреть где-то ещё? 
+          .card__content
+            p.card-1__grey-text На Автоботе более
+            p.card-1__number 100 000
+            p.card-1__blue-text объявлений
+        |
+        |
+        .card.card-2
+          h2.card__title Проверка по телефону
+          p.card__description 
+            | Проверьте номер продавца по базе Автобота и узнайте сколько объявлений он размещал за последний год.
+            |#[br]Возможно это перекуп.
+          .card__content
+            img(src="/img/card2overlay.png" alt="Overlay").card-2__overlay
+            img(src="/img/card2interface.png" alt="Check interface").card-2__interface
+        |
+        |
+        .card.card-3
+          h2.card__title Мониторинг объвялений
+          p.card__description 
+            | Следите за появлением нужного автомобиля 
+            |#[br]в режиме реального времени.
+            |#[br]Звоните первым и перехватывайте выгодный вариант.
+          .card__content
+            img(src="/img/card3.png" alt="Monitoring interface").card-3__interface
+        |
+        |
+        .card.card-4
+          h2.card__title Анализ цены
+          p.card__description 
+            | Узнайте, на сколько цена автомобиля отличается от  
+            |#[br]среднерыночной. Ориентируйтесь в ценах быстрее.
+          .card__content
+            img(src="/img/card4.png" alt="Analysis interface").card-4__interface
+        |
+        |
+        .card.card-5
+          h2.card__title Уведомления в мессенджеры
+          p.card__description 
+            | Занимайтесь своими делами, Автобот моментально сообщит о
+            |#[br]появлении нужного авто в Telegram или Viber.
+          .card__content
+            img(src="/img/card5msg1.png" alt="Messenger interface").card-5__msg-1
+            img(src="/img/card5msg2.png" alt="Messenger interface").card-5__msg-2
+            img(src="/img/card5msg3.png" alt="Messenger interface").card-5__msg-3
+        |
+        |
+        .card.card-6
+          h2.card__title Поиск по удаленным объявлениям
+          p.card__description 
+            | Проверьте, не продавался ли интересующий вас автомобиль с 
+            |#[br]другой ценой или пробегом. Анализируйте изменения цен
+            |#[br]за последний год.
+          .card__content
+            img(src="/img/card6item1.png" alt="Search interface").card-6__item-1
+            img(src="/img/card6item2.png" alt="Search interface").card-6__item-2
+            img(src="/img/card6item3.png" alt="Search interface").card-6__item-3
+        |
+        |
+        .card.card-7
+          h2.card__title История правок
+          p.card__description 
+            | Узнайте историю продажи автомобиля:  
+            |#[br]как долго продаётся, как менялась цена или описание.
+            |#[br]Любые изменения в объявлениях Автобот сохранит
+            |#[br]в истории правок. Эта важная информация поможет в переговорах
+            |#[br]с продавцом.
+          .card__content
+            img(src="/img/card7.png" alt="Edit history interface").card-7__interface
+        |
+        |
+        .card.card-8
+          h2.card__title Количество объявлений у продавца
+          p.card__description 
+            | Узнайте, сколько объявлений размещал  
+            |#[br]продавец за последний год.
+            |#[br]Возможно это перекуп.
+          .card__content
+            img(src="/img/card8.png" alt="Number of ads interface").card-8__interface
+        |
+        |
+        .card.card-9
+          h2.card__title Поиск по ключевым словам
+          p.card__description 
+            | Найдите объявления с нужными словами.
+            |#[br]Например: срочно, гаражное хранение, с НДС.
+          .card__content
+            img(src="/img/card9.png" alt="Keywords search interface").card-9__interface
+        |
+        |
+        .card
+          h2.card__title Автобот незаменим при поиске автомобиля 
+          p.card__description.blue-text Зарегестрируйтесь и убедитесь сами
+          .card__content.card-10
+            a(href="#").signup_big Регистрация
