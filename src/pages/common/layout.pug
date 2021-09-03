@@ -6,7 +6,10 @@ html(lang="ru")
             title My Site 
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
-            link(rel="stylesheet" href="assets/css/style.css")
+            link(rel="preconnect" href="https://fonts.googleapis.com")
+            link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+            link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet")
+            link(rel="stylesheet" href="css/style.min.css" )
     body
         block header
             include header 
@@ -14,4 +17,4 @@ html(lang="ru")
         block footer 
             include footer 
         block scripts
-            script(src="/main.js")
+            script(src="js/main.js")

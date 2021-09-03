@@ -1,0 +1,39 @@
+@mixin open-sans-normal($fontSize, $lineHeight){
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin open-sans-semi-bold($fontSize, $lineHeight){
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin open-sans-bold($fontSize, $lineHeight){
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin roboto-normal($fontSize, $lineHeight){
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin roboto-bold($fontSize, $lineHeight){
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

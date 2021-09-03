@@ -1,3 +1,40 @@
-a {
-  font-size: inherit;
+.footer {
+  padding-top: 0;
+  background-color: $blue-color;
+  padding-top: 26px;
+  color: white;
+  
+  &__legal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    @include open-sans-bold(14px, 19px);
+  }
+
+  &__contacts {
+    text-align: left;
+    @include open-sans-normal(13px, 18px);
+  }
+
+  &__legal-right {
+    width: 206px;
+    text-align: right;
+    margin-top: 50px;
+  }
+
+  &__link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    @include open-sans-normal(13px, 18px);
+    margin-bottom: 3px;
+  }
+
+  &__line {
+    margin-bottom: 15px;
+  }
 }
