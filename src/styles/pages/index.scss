@@ -148,10 +148,15 @@
   }
 }
 
-.card-1{
-  & > .card__description {
-    margin-bottom: 63px;
+@each $item, $marginBottom in $cardDescriptionMargins {
+  .#{$item} {
+    & > .card__description {
+      margin-bottom: $marginBottom;
+    }
   }
+}
+
+.card-1{
 
   &__grey-text {
     color: $grey-color;
@@ -221,9 +226,6 @@
 }
 
 .card-2 {
-  & > .card__description {
-    margin-bottom: 59px;
-  }
   &__interface {
     position: relative;
     top: -280px;
@@ -258,51 +260,8 @@
   }
 }
 
-.card-3 {
-  & > .card__description {
-    margin-bottom: 55px;
-  }
-}
-
-.card-4 {
-  & > .card__description {
-    margin-bottom: 55px;
-  }
-}
-
-.card-5 {
-  & > .card__description {
-    margin-bottom: 71px;
-  }
-}
-
-.card-6 {
-  & > .card__description {
-    margin-bottom: 44px;
-  }
-}
-
-.card-7 {
-  & > .card__description {
-    margin-bottom: 29px;
-  }
-}
-
-.card-8 {
-  & > .card__description {
-    margin-bottom: 31px;
-  }
-}
-
-.card-9 {
-  & > .card__description {
-    margin-bottom: 29px;
-  }
-}
-
 .card-10 {
   & > .card__description {
-    margin-bottom: 20px;
     color: $blue-color;
   }
 
